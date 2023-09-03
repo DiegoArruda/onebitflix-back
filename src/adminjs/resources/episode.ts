@@ -34,7 +34,7 @@ export const episodeResourceOptions: ResourceOptions = {
   ],
 };
 
-export const episodeResourcefeatures: FeatureType[] = [
+export const episodeResourceFeatures: FeatureType[] = [
   uploadFileFeature({
     provider: {
       local: {
