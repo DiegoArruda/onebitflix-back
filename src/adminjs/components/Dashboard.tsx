@@ -17,7 +17,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchDashboardDAta();
-  });
+  }, []);
 
   async function fetchDashboardDAta() {
     const res = await api.getDashboard();
