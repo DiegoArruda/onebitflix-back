@@ -5,12 +5,12 @@ import { Favorite } from "./Favorite";
 import { Like } from "./Like";
 import { User } from "./User";
 
-Category.hasMany(Course, { as: "courses" });
+Category.hasMany(Course, { as: "Courses" });
 
 Course.belongsTo(Category);
 Course.belongsToMany(User, { through: Favorite });
 Course.belongsToMany(User, { through: Like });
-Course.hasMany(Episode, { as: "episodes" });
+Course.hasMany(Episode, { as: "Episodes" });
 Course.hasMany(Favorite, { as: "FavoriteUsers", foreignKey: "course_id" });
 
 Episode.belongsTo(Course);
