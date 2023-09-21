@@ -18,7 +18,7 @@ export const categoryService = {
     };
   },
 
-  findByIdWithCourses: async (id: string) => {
+  findByIdWithCourses: async (id: string | number) => {
     const categoryWithCourses = await Category.findByPk(id, {
       attributes: ["id", "name"],
       include: {
