@@ -27,7 +27,7 @@ export const categoryService = {
           "id",
           "name",
           "synopsis",
-          ["thumbnail_url", "thumnailUrl"],
+          ["thumbnail_url", "thumbnailUrl"],
         ],
       },
     });
